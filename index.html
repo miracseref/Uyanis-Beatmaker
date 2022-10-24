@@ -5,67 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Uyanış Beatmaker</title>
-    <style>
-        body {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-            color: white;
-            height: 100vh;
-            margin: 0;
-        }
-
-        main {
-            margin-top: -8rem;
-            text-align: center;
-        }
-
-        span {
-            font-weight: bolder;
-        }
-
-        .bank-name {
-            font-weight: bolder;
-            text-transform: uppercase;
-        }
-
-        a {
-            background-color: rgb(249, 249, 249);
-            text-decoration: none;
-            border-radius: 23px;
-            border-width: 0;
-            color: #333333;
-            display: inline-block;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 20px;
-            list-style: none;
-            margin: 0;
-            padding: 10px 12px;
-            text-align: center;
-            transition: all 200ms;
-            vertical-align: baseline;
-            white-space: nowrap;
-            user-select: none;
-        }
-    </style>
-
 </head>
 
 <body>
-    <main>
-        <h1>Banka Bilgileri</h1>
-        <p><span>Alıcı İsmi:</span> ECİR KAPISI DERNEĞİ</p>
-        <p class="bank-name">Kuveyt Türk</p>
-        <p><span>Türk Lirası:</span> TR12 0020 5000 0957 6165 4000 01</p>
-        <p class="bank-name">Ziraat Katılım</p>
-        <p><span>Türk Lirası:</span> TR75 0020 9000 0135 7565 0000 01</p>
-        <p><span>Euro:</span> TR21 0020 9000 0135 7565 0000 03</p>
-        <a href="https://ecirkapisi.org/bagisyap">Bağış Yap</a>
-    </main>
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">Hi-Hat</span>
+        </div>
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">Kick-1</span>
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">Kick-2</span>
+        </div>
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">Ohhh</span>
+        </div>
+        <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">Shaker</span>
+        </div>
+        <div data-key="72" class="key">
+            <kbd>H</kbd>
+            <span class="sound">Snare-1</span>
+        </div>
+        <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound">Snare-2</span>
+        </div>
+        <div data-key="75" class="key">
+            <kbd>K</kbd>
+            <span class="sound">Snare-3</span>
+        </div>
+        <div data-key="76" class="key">
+            <kbd>L</kbd>
+            <span class="sound">Sweep</span>
+        </div>
+    </div>
+
+    <audio data-key="65" src="sounds/Hi-Hat 1.wav"></audio>
+    <audio data-key="83" src="sounds/Kick 2.wav"></audio>
+    <audio data-key="68" src="sounds/Kick 6.wav"></audio>
+    <audio data-key="70" src="sounds/Ohhh.wav"></audio>
+    <audio data-key="71" src="sounds/Shaker.wav"></audio>
+    <audio data-key="72" src="sounds/Snare 1.wav"></audio>
+    <audio data-key="74" src="sounds/Snare 3.wav"></audio>
+    <audio data-key="75" src="sounds/Snare 6.wav"></audio>
+    <audio data-key="76" src="sounds/Sweep.wav"></audio>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
